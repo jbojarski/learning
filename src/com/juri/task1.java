@@ -10,14 +10,14 @@ public class task1 {
 
         int count = calc(99, 99999, 9);
 
-        System.out.println(">>> count: " + count);
 
-        int count2 = calc(99, 99999, 11);
+        int count2 = calc2(00, 99999, 9);
 
-        int count3 = calc(99, 33, 10);
+        if (count == count2) {
+            System.out.println(">>> kõik on korras");
+        } else
+            System.out.println(">>> viga");
 
-
-        System.out.println(">>> diff: " + (count - count2));
 
     }
 
