@@ -43,6 +43,8 @@ public class task1 {
         int count = 0;
 
         // todo:
+
+
         // use while or do-while loop for the same task
         return count;
     }
