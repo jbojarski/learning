@@ -8,17 +8,37 @@ package com.juri;
 public class task1 {
     public static void main(String[] args) {
 
-        int count = calc(99, 99999, 9);
+        // int count = calc(99, 99999, 9);
 
-        System.out.println(">>> count: " + count);
+        // System.out.println(">>> count: " + count);
 
-        int count2 = calc(99, 99999, 11);
+        int total2 = calc2(99, 9999, 11);
+        int total1 = calc(99, 9999, 11);
 
-        int count3 = calc(99, 33, 10);
+
+         if (total1 - total2 != 0) {
+             System.out.println(">>>> ERROR");
+         } else {
+             System.out.println(">>> DONE");
+         }
+
+    }
+
+    private static int calc2(int minVal, int maxVal, int dev) {
+        int i = minVal;
+
+        int countDev = 0;
+
+        do {
+            if (i % dev == 0) {
+                countDev = countDev + 1;
+            }
+            i++;
+
+        } while (i < maxVal);
 
 
-        System.out.println(">>> diff: " + (count - count2));
-
+        return countDev;
     }
 
     private static int calc(int minVal, int maxVal, int dev) {
@@ -27,7 +47,6 @@ public class task1 {
 
         for (int i = minVal; i < maxVal; i++) {
             if (i % dev == 0) {
-                System.out.println(i + " delitsa na 11");
                 count++;
             }
         }
@@ -38,12 +57,4 @@ public class task1 {
         return count;
     }
 
-
-    private static int calc2(int minVal, int maxVal, int dev) {
-        int count = 0;
-
-        // todo:
-        // use while or do-while loop for the same task
-        return count;
-    }
 }
