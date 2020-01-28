@@ -1,28 +1,23 @@
 package com.juri;
 
+import java.util.Random;
+
 public class Arrays {
 
     public static void main(String[] args) {
 
+        Random rnd = new Random(); // генератор случайных чисел
 
-        int[] array = {9, 1, 2, 3, 4, 5, -4334};
-
-
-        // System.out.println(">>> len: " + array.length);
-
-
-        array[0] = 22;
-
+        int[] array = new int[50];      // массив из 50-ти элементов
 
         for (int i = 0; i < array.length; i++) {
-            //  System.out.println(">>> " + array[i]);
+            int nextRandomInt = rnd.nextInt(100); // получение случайного числа в пределах от 0 до 100
+            array[i] = nextRandomInt;        // инициализация элемента массива
         }
 
-        boolean[] b = new boolean[10];
-
-        for (int i = 0; i < b.length; i++) {
-            System.out.println(">>> [" + i + "]  = " + b[i]);
-        }
+        // 1) распечатать через запятую все элементы массива (в одну строчку)
+        // 2) создать новый массив и заполнить его значениями из первого массива в обратном порядке
+        // 3) найти среднее значение элементов первого массива
 
 
     }
