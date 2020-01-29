@@ -14,7 +14,7 @@ public class Arrays {
 
         //1) распечатать через запятую все элементы массива (в одну строчку)
         for (int i = 0; i < array.length; i++) {
-            int nextRandomInt = rnd.nextInt(100); // получение случайного числа в пределах от 0 до 100
+            int nextRandomInt = rnd.nextInt(200) - 100; // получение случайного числа в пределах от 0 до 100
             array[i] = nextRandomInt; // init
         }
         System.out.println();
@@ -46,6 +46,9 @@ public class Arrays {
         int maxVal = foundMaxValue(reverse);
         System.out.println(">>> max val: " + maxVal);
 
+        int minVal = foundMinValue(reverse);
+        System.out.println(">>> min val: " + minVal);
+
 
         // 1) распечатать через запятую все элементы массива (в одну строчку)
         // 2) создать новый массив и заполнить его значениями из первого массива в обратном порядке
@@ -61,15 +64,24 @@ public class Arrays {
     }
 
     private static int foundMaxValue(int[] array) {
-        int max = 0;
+        int max = array[0];
 
         for (int i = 0; i < array.length; i++) {
             if (array[i] > max) {
                 max = array[i];
             }
         }
-
-
         return max;
+    }
+
+    private static int foundMinValue(int[] array) {
+        int min = array[0];
+
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] < min) {
+                min = array[i];
+            }
+        }
+        return min;
     }
 }
