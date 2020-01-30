@@ -1,6 +1,6 @@
 package com.juri;
 
-public class task2 {
+public class Task2 {
 
     // !------!-----!------!---
     //  true   AND   true   =  ?

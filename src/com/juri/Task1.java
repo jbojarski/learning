@@ -5,7 +5,7 @@ package com.juri;
 // todo: 22.01
 // написать программу поиска всех трёхзначных чисел, которые деляться на 11
 // вывести их все на консоль и посчитать их кол-во
-public class task1 {
+public class Task1 {
     public static void main(String[] args) {
 
         // int count = calc(99, 99999, 9);
