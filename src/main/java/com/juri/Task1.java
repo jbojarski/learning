@@ -6,7 +6,7 @@ package com.juri;
 // написать программу поиска всех трёхзначных чисел, которые деляться на 11
 // вывести их все на консоль и посчитать их кол-во
 public class Task1 {
-    public static void main(String[] args) {
+    public void task() {
 
         // int count = calc(99, 99999, 9);
 
@@ -16,11 +16,11 @@ public class Task1 {
         int total1 = calc(99, 9999, 11);
 
 
-         if (total1 - total2 != 0) {
-             System.out.println(">>>> ERROR");
-         } else {
-             System.out.println(">>> DONE");
-         }
+        if (total1 - total2 != 0) {
+            System.out.println(">>>> ERROR");
+        } else {
+            System.out.println(">>> DONE");
+        }
 
     }
 

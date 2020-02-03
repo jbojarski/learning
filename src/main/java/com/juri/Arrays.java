@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class Arrays {
 
-    public static void main(String[] args) {
+    public void task() {
 
         Random rnd = new Random(); // генератор случайных чисел
 

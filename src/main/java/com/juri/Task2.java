@@ -15,7 +15,7 @@ public class Task2 {
     //  false   XOR   true   = ?
     // !------!-----!------!---
 
-    public static void main(String[] args) {
+    public void task() {
 
         // todo: calculate logical values
 

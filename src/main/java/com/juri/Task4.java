@@ -7,7 +7,7 @@ public class Task4 {
     // написать функцию решения квадратного уравнения
     // ax^2 + bx + c = 0
 
-    public static void main(String[] args) {
+    public void task() {
         // Create a Scanner object
         Scanner input = new Scanner(System.in);
 
