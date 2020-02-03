@@ -1,13 +1,12 @@
 package com.juri;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Assert;
+import org.junit.Test;
 
-
-class Task4Test {
+public class Task4Test {
 
     @Test
-    void quadraticEquations() {
-
+    public void quadraticEquations() {
         Task4 task4 = new Task4();
 
         String result = task4.quadraticEquations(3, 4, 5);
@@ -18,5 +17,10 @@ class Task4Test {
 
         String result3 = task4.quadraticEquations(1, 12, 36);
         assert result3.equals("-6.0");
+
+        String result4 = task4.quadraticEquations(3, 4, 'a');
+
+        Assert.assertNull(result4);
     }
+
 }

@@ -21,13 +21,13 @@ public class Task4 {
     }
 
     // Computes the discriminant of the quadriatic equation.
-    String quadraticEquations(double a, double b, double c) {
+    public String quadraticEquations(double a, double b, double c) {
         double discriminant = b * b - 4 * a * c;
         // Compute the real roots of the quadriatic equation if any.
         System.out.print("The equation has ");
         if (discriminant > 0) {
-            double x1 = (-b + Math.sqrt(discriminant)) / 2 / a;
-            double x2 = (-b - Math.sqrt(discriminant)) / 2 / a;
+            double x1 = (-b + Math.sqrt(discriminant)) / 2 * a;
+            double x2 = (-b - Math.sqrt(discriminant)) / 2 * a;
             System.out.println("two roots " + x1 + " and " + x2);
 
             return x1 + ";" + x2;
