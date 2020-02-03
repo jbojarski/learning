@@ -43,7 +43,5 @@ public class Task4 {
 }
 
 
-//4et ja  nakosja4il
-
 
 
